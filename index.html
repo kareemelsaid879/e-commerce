@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kareem shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header >
+        <div class="top_header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png">                    
+                </a>
+                <form action="#" class="search_box">
+                    <div class="select_box">
+                        <select id="category" name="category">
+                            <option value="All Categories">All Categories</option>
+                            <option value="electronics">Electronics & Digital</option>
+                            <option value="mobiles">Phones & Tablet</option>
+                            <option value="appliances">Home Appliances</option>
+                            <!-- <option value="Television & Monitors">all categories</option>                     -->
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="search for products" required>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="index.html"><i class="fa-solid fa-house"></i>                            
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count_item_header" id="count_item_header_id">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="pay.html"><i class="fa-solid fa-file-invoice-dollar"></i>
+                            <!-- <span class="count amount_pay_header">3200$</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </header>
+   
+
+    <!-------------------------my slider----------------------->
+    <section class="home_slider_sesction">        
+        <!-- <div class="container"> -->
+            <div class="banners">
+                <div class="slider">                
+                    <div class="slides">
+                        <div class="slide"><img src="img/1.gif" id="showbanners1"></div>                                              
+                        <div class="slide"><img src="img/banner_home1.png" id="showbanners"></div>                                              
+                    </div>
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+                <div class="banner2">
+                    <img src="img/small_1717849638.webp" class="side_banner">
+                    <!-- <img src="img/banner_home30.png" class="side_banner"> -->
+                </div>
+            </div>
+        <!-- </div>   -->
+    </section>    
+    <!-- ----------------category slider----------------------- -->
+    <section class="cat_slider container">
+        <div class="cat_slider_wrapper">        
+            <!-- <div class="cat_card">
+                <img src="img/categories/laptop.png" alt="laptop" class="cat_card_img">
+                <h2 class="cat_name">electronics</h2>
+                <button class="cat_card_btn">go</button>
+            </div>  -->
+            <div class="cat_card">
+                <img src="img/categories/headphone.png" alt="headphone" class="cat_card_img">
+                <h2 class="cat_name">electronics</h2>
+                <!-- <button class="cat_card_btn">go</button>             -->
+            </div> 
+            <div class="cat_card">
+                <img src="img/categories/tablet.png" alt="tablet" class="cat_card_img">
+                <h2 class="cat_name">mobiles</h2>
+                <!-- <button class="cat_card_btn">go</button> -->
+            </div>
+            <div class="cat_card">
+                <img src="img/categories/screens.png" alt="screens" class="cat_card_img">
+                <h2 class="cat_name">appliances</h2>
+                <!-- <button class="cat_card_btn">go</button> -->
+            </div> 
+            <div class="cat_card">
+                <img src="img/categories/laptop.png" alt="laptop" class="cat_card_img">
+                <h2 class="cat_name">laptop</h2>
+                <!-- <button class="cat_card_btn">go</button> -->
+            </div>              
+        </div>    
+        
+    </section>   
+    <!------------------category products sction ----------------------->
+    <section class="products_section container" id="products_section_id">
+
+       <div id="product_wrapper">
+        
+       </div>
+       <button class="prev" onclick="slideBtn('prev')">Prev</button>
+       <button class="next" onclick="slideBtn('Next')">Next</button>
+        <!-- <div class="product_card">
+            <span class="sale_percent">50%</span>
+            <div class="product_card_img">
+                <img src="img/product/0.png" alt="">
+            </div>
+            <div class="stars">
+                <i class="fa-regular fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+            </div>
+            <p class="product_name">Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="product_price">
+                <p><span>220$</span></p>
+                <p class="old_price">80$</p>
+            </div>
+            <div class="product_card_buttons" >
+                <span class="product_card_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>add to cart
+                </span>
+                <span class="product_card_like">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+        </div> > -->
+
+
+    </section>
+    <br>
+    <hr>
+        <!---------all products---------------->
+    <section id="all_store_products">
+       
+
+    </section>
+ 
+    
+     <!-- <footer class="container"> -->
+     <footer>
+        <div class="identity">
+            <a href="#" class="footerlogo">
+                <img src="img/white_logo.png"></img>                    
+            </a>  
+            <div class="copyright">
+                <p>&copy;2025 <span>KareemTech</span> . All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="social_icons">
+            <a href="https://www.facebook.com/kriem.elsayed/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="go_home" id="go_up">
+            <i class="fa-solid fa-circle-up"></i>
+            <!-- <a href=""><i class="fa-solid fa-circle-up"></i></a> -->
+        </button>
+     </footer> 
+       
+        
+        <script src="js/home_products.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/prod.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kareem's cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header >
+        <div class="top_header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png">                    
+                </a>
+                <form action="#" class="search_box">
+                    <div class="select_box">
+                        <select id="category" name="category">
+                            <option value="All Categories">All Categories</option>
+                            <option value="electronics">Electronics & Digital</option>
+                            <option value="mobiles">Phones & Tablet</option>
+                            <option value="appliances">appliances</option>
+                            <option value="Television & Monitors">all categories</option>                    
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="search for products" required>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="index.html"><i class="fa-solid fa-house"></i>                            
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count_item_header">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="pay.html"><i class="fa-solid fa-file-invoice-dollar"></i>
+                            <!-- <span class="count amount_pay_header">3200$</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </header>
+    <sction class="cart_page container">
+        <div class="cart_prod_area" id="cart_prod_area_id">
+            <h2 class="cart_area_title" id="cart_area_title_id">your Cart <span>is empty</span> we hope to see you soon .</h2>
+            <!-- <div class="cart_product">
+                <div>
+                    <img src="./img/product/1.png" class="cart_prod_img">
+                </div>                
+                <div class="cart_prod_details">
+                    <div class="cart_product_info">
+                        <p class="cart_prod_name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veritatis voluptas modi officiis veniam eius quis voluptatibus rem aliquid mollitia, corrupti ut laborum, optio incidunt! Excepturi nam in, quaerat dolores debitis, voluptatum, est perspiciatis dignissimos delectus mollitia nihil esse laborum vitae dicta modi saepe quam. Quis saepe cupiditate soluta tempora non. Itaque voluptatibus laudantium cumque nam officia quos quasi minus.</p>
+                        <div class="price_part">
+                            <p class="cart_prod_price"><span>$</span>500</p>
+                            <p class="cart_product_old_price">$650.00<span>15%OFF</span></p>
+                        </div>
+                    </div>
+
+                    <div class="cart_product_btns">
+                        <span class="cart_product_remove"><i class="fa-regular fa-trash-can"></i>Remove</span>
+                        <div class="cart_prod_qty">
+                            <p id="decrease" class="cart_prod_qty_btn"><span>-</span></p>
+                            <input type="text" name="qty" id="qty" value="1" required>
+                            <p id="increase" class="cart_prod_qty_btn"><span>+</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+
+            
+        </div> 
+        
+        <div class="cart_order_summary">
+            <h2 class="cart_summary_title">Cart Summary</h2>
+            <div class="cart_products_count">
+                <h3 id="count">Subtotal(0)</h3>
+                <h3 id="price_sum">$ 0</h3>
+            </div>
+            <div class="cart_products_count">
+                <h3 id="cart_ship">Shipping Fee</h3>
+                <h3 id="cart_ship_sum">Free</h3>
+            </div>
+            <hr>
+            <div class="cart_products_count">
+                <h3 id="cart_total_price">Total<span>(including Vat)</span></h3>
+                <h3 id="cart_price_sum">$ 0</h3>
+            </div>
+            <div class="cart_pay_btn">
+                <button type="button" id="pay_btn" onclick="goPay()">Let's Do It</button>
+            </div>
+        </div>
+    </sction>
+
+    <footer>
+        <div class="identity">
+            <a href="#" class="footerlogo">
+                <img src="img/white_logo.png"></img>                    
+            </a>  
+            <div class="copyright">
+                <p>&copy;2025 <span>KareemTech</span> . All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="social_icons">
+            <a href="https://www.facebook.com/kriem.elsayed/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="go_home">
+            <a href="#"><i class="fa-solid fa-circle-up"></i></a>
+        </button>
+     </footer> 
+    
+     <script src="js/cart.js"></script>
+</body>
+</html>
