@@ -9,7 +9,7 @@ setInterval(() => {
    nn===7? nn=1 : null   
    banners.src=`img/banner_home${nn}.png`
    nn++
-}, 30000);
+}, 3000);
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 
